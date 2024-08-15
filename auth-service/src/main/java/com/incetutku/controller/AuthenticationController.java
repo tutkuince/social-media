@@ -1,6 +1,5 @@
 package com.incetutku.controller;
 
-import com.incetutku.config.RestAPIs;
 import com.incetutku.dto.request.LoginRequestDTO;
 import com.incetutku.dto.request.RegisterRequestDTO;
 import com.incetutku.entity.Authentication;

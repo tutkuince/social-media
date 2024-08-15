@@ -1,5 +1,6 @@
 package com.incetutku.service;
 
+import com.incetutku.dto.request.LoginRequestDTO;
 import com.incetutku.dto.request.RegisterRequestDTO;
 import com.incetutku.entity.Authentication;
 import com.incetutku.repository.AuthenticationRepository;
@@ -17,5 +18,9 @@ public class AuthenticationService {
                 .email(registerRequestDTO.email())
                 .password(registerRequestDTO.password())
                 .build());
+    }
+
+    public Boolean login(LoginRequestDTO loginRequestDTO) {
+        return authenticationRepository.existsByUsernameAndPassword(loginRequestDTO.username(), loginRequestDTO.password());
     }
 }

@@ -6,6 +6,7 @@ import com.incetutku.dto.request.RegisterRequestDTO;
 import com.incetutku.entity.Authentication;
 import com.incetutku.manager.UserProfileManager;
 import com.incetutku.repository.AuthenticationRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +16,7 @@ public class AuthenticationService {
     private final AuthenticationRepository authenticationRepository;
     private final UserProfileManager userProfileManager;
 
+    @Transactional
     public Authentication register(RegisterRequestDTO registerRequestDTO) {
         Authentication authentication = authenticationRepository.save(Authentication.builder()
                 .username(registerRequestDTO.username())

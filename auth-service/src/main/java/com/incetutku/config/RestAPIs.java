@@ -14,5 +14,8 @@ public class RestAPIs {
     public static final String AUTH_SERVICE_LOGIN = "/login";
     public static final String AUTH_SERVICE_REGISTER = "/register";
 
+    // User-Service
+    public static final String USER_SERVICE_CREATE_USER = "/create-user";
+
 
 }

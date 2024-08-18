@@ -21,3 +21,18 @@ docker run --name social-media-redis -p 6379:6379 -d redis:latest
 ```bash
 docker run --name redis-gui -p 8001:8001 -d redislabs/redisinsight:1.14.0
 ```
+
+## Build Docker Image for Config Server
+```bash
+docker build -t tutkuince/config-server:v01 .
+```
+
+## Build Docker Image for Auth Service
+```bash
+docker build -t tutkuince/auth-service:v01 .
+```
+
+## Build Docker Image for User Service
+```bash
+docker build -t tutkuince/user-service:v01 .
+```

@@ -27,4 +27,9 @@ public class UserProfileController {
     public ResponseEntity<List<UserProfile>> getUserList() {
         return ResponseEntity.ok(userProfileService.getUserList());
     }
+
+    @GetMapping("/convertNameToUpperCase")
+    public ResponseEntity<String> convertNameToUpperCase(String name) throws InterruptedException {
+        return ResponseEntity.ok(userProfileService.convertNameToUpperCase(name));
+    }
 }

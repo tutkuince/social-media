@@ -4,4 +4,5 @@ dependencies {
     implementation libraries.lombok
     annotationProcessor libraries.lombok
     implementation libraries.springCloudStarterOpenFeign
+    implementation libraries.springCloudConfigCleint
 }

@@ -2,4 +2,5 @@ dependencies {
     implementation libraries.springBootDataMongo
     implementation libraries.lombok
     annotationProcessor libraries.lombok
+    implementation libraries.springCloudConfigCleint
 }
